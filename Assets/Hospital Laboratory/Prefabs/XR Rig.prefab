@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6300294946902676318}
   - component: {fileID: 6300294946902676319}
+  - component: {fileID: 530759669}
+  - component: {fileID: 530759670}
   m_Layer: 0
   m_Name: XR Rig
   m_TagString: Untagged
@@ -50,6 +52,34 @@ MonoBehaviour:
   m_CameraFloorOffsetObject: {fileID: 6300294947582463958}
   m_RequestedTrackingOriginMode: 0
   m_CameraYOffset: 1.1176
+--- !u!114 &530759669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6300294946902676256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03a5df2202a8b96488c744be3bd0c33e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Timeout: 10
+  m_XROrigin: {fileID: 6300294946902676319}
+--- !u!114 &530759670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6300294946902676256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01f69dc1cb084aa42b2f2f8cd87bc770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_System: {fileID: 530759669}
+  m_DelayTime: 0
 --- !u!1 &6300294947316371641
 GameObject:
   m_ObjectHideFlags: 0
