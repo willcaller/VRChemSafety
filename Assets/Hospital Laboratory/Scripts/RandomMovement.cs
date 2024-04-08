@@ -8,6 +8,7 @@ public class RandomMovement : MonoBehaviour //don't forget to change the script 
 {
     public NavMeshAgent agent;
     public float range; //radius of sphere
+    public Animator anim; //Animation for walking
 
     public Transform centrePoint; //centre of the area the agent wants to move around in
     //instead of centrePoint you can set it as the transform of the agent if you don't care about a specific area
@@ -15,12 +16,14 @@ public class RandomMovement : MonoBehaviour //don't forget to change the script 
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        anim = GetComponent<Animator>();
+        anim.SetTrigger("Walking");
     }
 
     
     void Update()
     {
-        if(agent.remainingDistance <= agent.stoppingDistance) //done with path
+        if (agent.remainingDistance <= agent.stoppingDistance) //done with path
         {
             Vector3 point;
             if (RandomPoint(centrePoint.position, range, out point)) //pass in our centre point and radius of area
@@ -29,7 +32,6 @@ public class RandomMovement : MonoBehaviour //don't forget to change the script 
                 agent.SetDestination(point);
             }
         }
-
     }
     bool RandomPoint(Vector3 center, float range, out Vector3 result)
     {
