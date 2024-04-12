@@ -13,11 +13,14 @@ public class RandomMovement : MonoBehaviour //don't forget to change the script 
     public Transform centrePoint; //centre of the area the agent wants to move around in
     //instead of centrePoint you can set it as the transform of the agent if you don't care about a specific area
 
+    //private bool isWaiting = true;
+
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
-        anim.SetTrigger("Walking");
+        anim.SetTrigger("isWalking");
+        //rb = GetComponent<Rigidbody>();
     }
 
     
@@ -25,6 +28,9 @@ public class RandomMovement : MonoBehaviour //don't forget to change the script 
     {
         if (agent.remainingDistance <= agent.stoppingDistance) //done with path
         {
+            //Character model needs to stop and go idle for a bit then restart
+            //StartCoroutine(WaitForSec(5.0f));
+
             Vector3 point;
             if (RandomPoint(centrePoint.position, range, out point)) //pass in our centre point and radius of area
             {
@@ -49,6 +55,4 @@ public class RandomMovement : MonoBehaviour //don't forget to change the script 
         result = Vector3.zero;
         return false;
     }
-
-    
 }
