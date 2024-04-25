@@ -7,15 +7,14 @@ public class Spawner : MonoBehaviour
 
     public GameObject[] myObjects;
     // Update is called once per frame
-    void Update()
+    void Start()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
+        
             int randomIndex = Random.Range(0, myObjects.Length);
-            Vector3 randomSpawnPoint = new Vector3 (Random.Range(-10, 11), 5, Random.Range(-10,11));
+            Vector3 randomSpawnPoint = new Vector3 (Random.Range(0, 3), 0, Random.Range(0,3));
 
             Instantiate(myObjects[randomIndex] ,randomSpawnPoint, Quaternion.identity);
 
-        }
+        
     }
 }
