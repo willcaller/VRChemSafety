@@ -9,12 +9,13 @@ public class Spawner : MonoBehaviour
     // Update is called once per frame
     void Start()
     {
-        
+        for (int i = 0; i < myObjects.Length; i++)
+        {
             int randomIndex = Random.Range(0, myObjects.Length);
-            Vector3 randomSpawnPoint = new Vector3 (Random.Range(0, 3), 0, Random.Range(0,3));
+            Vector3 randomSpawnPoint = new Vector3(Random.Range(0, 3), 0, Random.Range(0, 3));
 
-            Instantiate(myObjects[randomIndex] ,randomSpawnPoint, Quaternion.identity);
-
+            Instantiate(myObjects[randomIndex], randomSpawnPoint, Quaternion.identity);
+        }
         
     }
 }
