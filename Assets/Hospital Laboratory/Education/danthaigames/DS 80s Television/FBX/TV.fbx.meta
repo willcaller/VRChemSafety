@@ -1,0 +1,327 @@
+fileFormatVersion: 2
+guid: 1d26229a0bbb4ec40818d058d2ca8ae9
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Channel Buttons
+  - first:
+      1: 100002
+    second: Controls Panel
+  - first:
+      1: 100004
+    second: Handle Left
+  - first:
+      1: 100006
+    second: Handle Right
+  - first:
+      1: 100008
+    second: Screen
+  - first:
+      1: 100010
+    second: Screen Surround
+  - first:
+      1: 100012
+    second: Slider Button
+  - first:
+      1: 100014
+    second: Slider Button.001
+  - first:
+      1: 100016
+    second: //RootNode
+  - first:
+      1: 100018
+    second: TV Back
+  - first:
+      1: 100020
+    second: TV Front Panel 01
+  - first:
+      4: 400000
+    second: Channel Buttons
+  - first:
+      4: 400002
+    second: Controls Panel
+  - first:
+      4: 400004
+    second: Handle Left
+  - first:
+      4: 400006
+    second: Handle Right
+  - first:
+      4: 400008
+    second: Screen
+  - first:
+      4: 400010
+    second: Screen Surround
+  - first:
+      4: 400012
+    second: Slider Button
+  - first:
+      4: 400014
+    second: Slider Button.001
+  - first:
+      4: 400016
+    second: //RootNode
+  - first:
+      4: 400018
+    second: TV Back
+  - first:
+      4: 400020
+    second: TV Front Panel 01
+  - first:
+      21: 2100000
+    second: Chrome Frame
+  - first:
+      21: 2100002
+    second: TV Texture
+  - first:
+      21: 2100004
+    second: TV Feet
+  - first:
+      21: 2100006
+    second: Handle Material
+  - first:
+      21: 2100008
+    second: Power Button
+  - first:
+      21: 2100010
+    second: Slider Button Material
+  - first:
+      21: 2100012
+    second: Screen Surround Black
+  - first:
+      23: 2300000
+    second: Channel Buttons
+  - first:
+      23: 2300002
+    second: Controls Panel
+  - first:
+      23: 2300004
+    second: Handle Left
+  - first:
+      23: 2300006
+    second: Handle Right
+  - first:
+      23: 2300008
+    second: Screen
+  - first:
+      23: 2300010
+    second: Screen Surround
+  - first:
+      23: 2300012
+    second: Slider Button
+  - first:
+      23: 2300014
+    second: Slider Button.001
+  - first:
+      23: 2300016
+    second: //RootNode
+  - first:
+      23: 2300018
+    second: TV Back
+  - first:
+      23: 2300020
+    second: TV Front Panel 01
+  - first:
+      33: 3300000
+    second: Channel Buttons
+  - first:
+      33: 3300002
+    second: Controls Panel
+  - first:
+      33: 3300004
+    second: Handle Left
+  - first:
+      33: 3300006
+    second: Handle Right
+  - first:
+      33: 3300008
+    second: Screen
+  - first:
+      33: 3300010
+    second: Screen Surround
+  - first:
+      33: 3300012
+    second: Slider Button
+  - first:
+      33: 3300014
+    second: Slider Button.001
+  - first:
+      33: 3300016
+    second: //RootNode
+  - first:
+      33: 3300018
+    second: TV Back
+  - first:
+      33: 3300020
+    second: TV Front Panel 01
+  - first:
+      43: 4300000
+    second: Wooden Frame
+  - first:
+      43: 4300002
+    second: Handle Right
+  - first:
+      43: 4300004
+    second: TV Front Panel 01
+  - first:
+      43: 4300006
+    second: Controls Panel
+  - first:
+      43: 4300008
+    second: Channel Buttons
+  - first:
+      43: 4300010
+    second: Slider Button.001
+  - first:
+      43: 4300012
+    second: Slider Button
+  - first:
+      43: 4300014
+    second: Screen Surround
+  - first:
+      43: 4300016
+    second: Screen
+  - first:
+      43: 4300018
+    second: Handle Left
+  - first:
+      43: 4300020
+    second: TV Back
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chrome Frame
+    second: {fileID: 2100000, guid: e0400192ffca3a246bf649093b973b86, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Handle Material
+    second: {fileID: 2100000, guid: dc5bc3a817498714e802261a98b0b1e5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Power Button
+    second: {fileID: 2100000, guid: 1f99ca8e57a3e0040a04a1b7b8b85a6c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Screen Surround Black
+    second: {fileID: 2100000, guid: 8366cbe65b7874b4b883236c1406df03, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Slider Button Material
+    second: {fileID: 2100000, guid: 5ad22b013ad19b6419e657485eda32c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TV Feet
+    second: {fileID: 2100000, guid: 54ae306490e6dae458fbf8db9e5af1b5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TV Texture
+    second: {fileID: 2100000, guid: e817b1897392eeb49ad7b9b0349d785e, type: 2}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 0
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

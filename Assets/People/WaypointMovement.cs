@@ -14,14 +14,11 @@ public class WaypointMovement : MonoBehaviour
 
     private NavMeshAgent agent;
     private Animator anim;
-    private SliderController sliderController; // Reference to the slider controller
 
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
-        sliderController = GetComponent<SliderController>(); // Get the slider controller component
-        sliderController.npcTransform = transform; // Set the transform of the NPC in the slider controller
 
         // Check if there are waypoints assigned
         if (waypoints.Length == 0)
@@ -38,7 +35,6 @@ public class WaypointMovement : MonoBehaviour
         if (isIdling)
         {
             idleTimer += Time.deltaTime;
-            sliderController.UpdateProgress(); // Update the progress on the slider when idling
             if (idleTimer >= idleTime)
             {
                 isIdling = false;
@@ -63,7 +59,6 @@ public class WaypointMovement : MonoBehaviour
     {
         agent.SetDestination(waypoints[index].position);
         isIdling = false;
-        sliderController.ResetProgress(); // Reset the progress on the slider when moving to a new waypoint
         anim.SetTrigger("isWalking");
     }
 }

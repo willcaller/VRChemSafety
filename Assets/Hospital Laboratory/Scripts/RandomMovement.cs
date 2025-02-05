@@ -9,37 +9,39 @@ public class RandomMovement : MonoBehaviour //don't forget to change the script 
     public NavMeshAgent agent;
     public float range; //radius of sphere
     public Animator anim; //Animation for walking
-    public Rigidbody rb;
 
     public Transform centrePoint; //centre of the area the agent wants to move around in
     //instead of centrePoint you can set it as the transform of the agent if you don't care about a specific area
+
+    //private bool isWaiting = true;
 
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
         anim.SetTrigger("isWalking");
-        rb = GetComponent<Rigidbody>();
+        //rb = GetComponent<Rigidbody>();
     }
 
     
     void Update()
     {
-            if (agent.remainingDistance <= agent.stoppingDistance) //done with path
+        if (agent.remainingDistance <= agent.stoppingDistance) //done with path
+        {
+            //Character model needs to stop and go idle for a bit then restart
+            //StartCoroutine(WaitForSec(5.0f));
+
+            Vector3 point;
+            if (RandomPoint(centrePoint.position, range, out point)) //pass in our centre point and radius of area
             {
-                stopCharacter();
-                Invoke("startCharacter", 5.0f);
-                //Character model needs to stop and go idle for a bit then restart
-                Vector3 point;
-                if (RandomPoint(centrePoint.position, range, out point)) //pass in our centre point and radius of area
-                {
-                    Debug.DrawRay(point, Vector3.up, Color.blue, 1.0f); //so you can see with gizmos
-                    agent.SetDestination(point);
-                }
+                Debug.DrawRay(point, Vector3.up, Color.blue, 1.0f); //so you can see with gizmos
+                agent.SetDestination(point);
             }
+        }
     }
     bool RandomPoint(Vector3 center, float range, out Vector3 result)
     {
+
         Vector3 randomPoint = center + Random.insideUnitSphere * range; //random point in a sphere 
         NavMeshHit hit;
         if (NavMesh.SamplePosition(randomPoint, out hit, 1.0f, NavMesh.AllAreas)) //documentation: https://docs.unity3d.com/ScriptReference/AI.NavMesh.SamplePosition.html
@@ -52,20 +54,5 @@ public class RandomMovement : MonoBehaviour //don't forget to change the script 
 
         result = Vector3.zero;
         return false;
-    }
-    private Vector3 pausedVel;
-    private Vector3 pausedAngVel;
-
-    private void stopCharacter()
-    {
-        agent.isStopped = true;
-        anim.SetTrigger("isIdle");
-    }
-
-    private void startCharacter()
-    {
-        anim.SetTrigger("isWalking");
-        agent.speed = 1.0f;
-        agent.isStopped = false;
     }
 }
